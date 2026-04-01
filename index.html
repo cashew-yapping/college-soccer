@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Soccer Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+
+    .dark {
+      background: #111;
+      color: white;
+    }
+
+    .dark header {
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>College Soccer Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Welcome to my site</h2>
+    <p>This is where I’ll post about college soccer.</p>
+    <button onclick="toggleDark()">Toggle Dark Mode</button>
+  </div>
+
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
